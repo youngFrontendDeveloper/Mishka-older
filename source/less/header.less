@@ -1,0 +1,112 @@
+.header {
+  position: relative;
+  width: 100%;
+  flex: 0 0 auto;   
+
+  @media(min-width: @width-tablet) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top: 1px solid #ececec;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+
+  @media (min-width: @width-tablet) {
+    height: 88px;
+    padding-left: 50px;
+    border-bottom:0;
+  }
+
+  @media (min-width: @width-desktop) {
+    position: absolute;
+    top: 0;
+    left: calc(@width-desktop - 50%);
+    transform: translate(-50%);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 0;
+  }
+}
+
+.header__nav {
+  @media (min-width: @width-desktop) {
+   width: 100%;
+  }
+}
+
+.header__mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header__bottom-menu {
+
+  @media (min-width: @width-tablet) {
+    background-color: #f9f9f9;
+    border-top: 1px solid #e7e7e7;
+  }
+
+  &--background--dark {
+    background-color: #f1f1f1;
+  }
+}
+
+// .submenu-bottom {
+//   position: absolute;
+//   left: 0;
+//   bottom: -206px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: flex-end;
+//   width: 320px;
+//   margin: 0 auto;
+
+//   @media (min-width: @width-tablet) {
+//     position: absolute;
+//     left: 50px;
+//     bottom: 0;
+//     flex-wrap: nowrap;
+//     width: 668px;
+
+//     &::after {
+//       position: absolute;
+//       left: 0px;
+//       bottom: -13px;
+//       content: "";
+//       width: 100%;
+//       height: 22px;
+//       background: url(../img/tracery-tablet.svg) no-repeat;
+//     }
+//   }
+
+//   @media (min-width: @width-desktop) {
+//     position: absolute;
+//     left: 100px;
+//     bottom: 0;
+//     width: 1050px;
+
+//     &::after {
+//       // position: absolute;
+//       // left: 0;
+//       bottom: -20px;
+//       // content: "";
+//       // width: 103%;
+//       height: 34px;
+//       background: url(../img/tracery-desktop.svg) no-repeat;
+//     }
+//   }
+// }
+

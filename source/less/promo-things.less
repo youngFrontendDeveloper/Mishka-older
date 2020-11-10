@@ -1,0 +1,137 @@
+.promo-things {
+  position: relative;
+  width: 320px;
+  height: 282px;
+  margin: 0;
+  padding: 73px 0 126px 0;
+  background: #f9f9f9 url(../img/header-bg.jpg) top -18px center no-repeat;
+  box-sizing: border-box;
+
+  @media (min-width: @width-tablet) {
+    width: @width-tablet;
+    height: 746px;
+    padding: 157px 0 487px 0;
+    background: #f9f9f9 url("../img/header-bg-tablet.jpg") top center no-repeat;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: @width-desktop;
+    padding: 160px 0 470px 0;
+    background: #f9f9f9 url("../img/header-bg-desktop.jpg") top center no-repeat;
+  }
+}
+
+.promo-things__title {
+  text-align: center;
+}
+
+.promo-things__links {
+  position: absolute;
+  left: 0;
+  bottom: -206px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @width-tablet) {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    flex-wrap: nowrap;
+    width: 668px;
+
+    &::after {
+      position: absolute;
+      left: 0px;
+      bottom: -13px;
+      content: "";
+      width: 100%;
+      height: 22px;
+      background: url(../img/tracery-tablet.svg) no-repeat;
+    }
+  }
+
+  @media (min-width: @width-desktop) {
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    width: 1050px;
+
+    &::after {
+      bottom: -20px;
+      height: 34px;
+      background: url(../img/tracery-desktop.svg) no-repeat;
+    }
+  }
+}
+
+.promo-things__interior,
+.promo-things__toy {
+  display: block;
+  width: 320px;
+  height: 103px;
+  padding: 27px 160px 27px 30px;
+  .text-bold();
+  color: @color-white;
+  font-size: 19px;
+  line-height: 24px;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &:active {
+    color: #8dd5c9;
+  }
+
+  @media (min-width: @width-tablet) {
+    width: 334px;
+    height: 119px;
+    padding: 35px 170px 27px 35px;
+}
+
+  @media (min-width: @width-desktop) {
+    width: 525px;
+  }
+  
+}
+
+.promo-things__interior {
+  position: absolute;
+  bottom: 103px;
+  left: 0;
+  background: @color-green url(../img/interior.svg) right 30px center no-repeat;
+  background-size: 40px;
+
+  &:hover {
+    height: 108px;
+    
+  }
+
+  @media (min-width: @width-tablet) {
+    bottom: 0;
+   &:hover {
+      height: 124px;
+    }
+  }
+}
+
+.promo-things__toy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #56c3b2 url(../img/toy.svg) right 30px center no-repeat;
+  background-size: 60px;
+
+  &:hover {
+    height: 108px;
+    
+  }
+
+  @media (min-width: @width-tablet) {
+    &:hover {
+       height: 124px;
+     }
+   }
+}

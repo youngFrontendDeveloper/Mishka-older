@@ -1,0 +1,58 @@
+.bottom-menu {
+  display: none;
+
+  @media(min-width: @width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px; 
+  }
+
+  @media(min-width: @width-desktop) {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px; 
+  }
+}
+
+.bottom-menu__new-receipts,
+.bottom-menu__sale {
+  display: none;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media(min-width: @width-desktop) {
+    display: block;
+    width: 175px;
+    .text-bold();
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+.bottom-menu__sale {
+ 
+  @media(min-width: @width-desktop) {
+    margin-left: 40px;
+  }
+}
+
+.bottom-menu__delivery { 
+  margin-left: auto; 
+
+  @media(min-width: @width-tablet) {
+    .text-normal();
+    line-height: 24px; 
+  }  
+}

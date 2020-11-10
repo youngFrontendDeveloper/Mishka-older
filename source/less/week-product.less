@@ -1,0 +1,173 @@
+.week-product {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 36px;
+  background: url(../img/triple-set.jpg) center bottom 170px no-repeat;
+  background-size: 260px;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 320px;
+    height: 6px;
+    background: url(../img/tracery-grey.svg) center no-repeat;
+  }
+
+  @media (min-width: @width-tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 53px;
+    background: url(../img/triple-set-tablet.jpg) right 50px bottom 53px no-repeat;
+    background-size: 334px;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 771px;
+      height: 15px;
+      background: url(../img/tracery-grey-tablet.svg) no-repeat;
+    }
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 73px;
+    background: url(../img/triple-set-desktop.jpg) right bottom 73px no-repeat;
+    background-size: 525px;
+
+    &:after {
+      position: absolute;
+      left: 100px;
+      bottom: 0;
+      content: "";
+      width: 1050px;
+      height: 23px;
+      background: url(../img/tracery-grey-desktop.svg) no-repeat;
+    }
+  }
+}
+
+.week-product__headline {
+  padding: 30px 0 30px;
+  
+  @media (min-width: @width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 48px;
+  }
+
+  @media (min-width: @width-desktop) {
+    justify-content: flex-start;
+    padding: 100px 0px 50px;
+  }
+}
+
+.week-product__text {
+  .text-green();
+
+  @media (min-width: @width-tablet){
+    width: 85px;
+    margin: 0 20px;
+    
+  }
+
+  @media (min-width: @width-desktop){
+    margin: 0 50px 0 45px;
+    order: -1;
+   
+  }
+}
+
+.week-product__content {
+
+  @media (min-width: @width-tablet){
+    width: 292px;    
+  }
+
+  @media (min-width: @width-desktop){
+    margin-left: 175px;
+  }
+}
+
+.week-product__description{
+  margin: 0;
+  margin-bottom: 22px;  
+  .text-normal();
+  line-height: 24px;
+
+  @media (min-width: @width-tablet){
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @width-desktop){
+    margin-bottom: 40px;
+  }
+}
+
+.week-product__parameters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 260px;
+
+  @media (min-width: @width-tablet){
+    width: 295px;
+  }  
+}
+
+.week-product__left {
+  width: 96px;
+  padding: 6px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.week-product__right {
+  width: 163px;
+  padding: 6px 0;
+  border-bottom: 1px solid #ececec;
+
+  @media (min-width: @width-tablet){
+    width: 197px;
+  }
+}
+
+.week-product__price {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 368px;
+  .text-bold();
+  line-height: 24px;
+
+  @media (min-width: @width-tablet){
+    width: 290px;
+    margin-top: 57px;
+    text-align: center;
+  }
+
+  @media (min-width: @width-desktop){
+    margin-top: 76px;
+  }
+}
+
+.week-product__order {
+  width: 260px;
+  margin-top: 25px;
+
+  @media (min-width: @width-tablet){
+    width: 290px;
+    margin-top: 35px;
+  }
+
+  @media (min-width: @width-desktop){
+    margin-top: 21px;    
+  }
+}

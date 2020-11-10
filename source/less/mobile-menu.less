@@ -1,0 +1,48 @@
+.mobile-menu {
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 320px;
+  height: 78px;
+  border-bottom: 1px solid #ececec;
+
+  @media(min-width: @width-tablet) {
+    display: none;
+  }
+ }
+
+.mobile-menu img{
+  width: 86px;
+}
+
+// .no-js {
+//   display: block;
+// }
+
+.mobile-menu__button {
+  position: absolute;
+  top: 31px;
+  right: 30px;
+  width: 20px;
+  height: 14px;
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  background: url(../img/icon-menu.svg) no-repeat;
+  
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--close {
+    background: url(../img/close.svg) no-repeat;
+  }
+}
+

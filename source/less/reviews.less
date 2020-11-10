@@ -1,0 +1,111 @@
+.reviews {
+  max-height: fit-content;
+  position: relative; 
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 45px;
+  overflow: hidden;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 320px;
+    height: 6px;
+    background: url(../img/tracery-grey.svg) center no-repeat;
+  }
+
+  @media (min-width: @width-tablet) {
+    min-height: 425px;
+    padding-top: 80px;  
+    padding-left: 50px;
+    padding-right: 50px; 
+    background: url(../img/review.jpg) top left no-repeat;
+   
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 771px;
+      height: 15px;
+      background: url(../img/tracery-grey-tablet.svg) no-repeat;
+    }
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-left: 275px;
+    padding-right: 100px; 
+    background: url(../img/review.jpg) top left 100px no-repeat;
+
+    &:after {
+      position: absolute;
+      left: 100px;
+      bottom: 0;
+      content: "";
+      width: 1050px;
+      height: 23px;
+      background: url(../img/tracery-grey-desktop.svg) no-repeat;
+    }
+  }
+}
+
+.reviews__author-text {
+  position: relative;
+  // height: 260px;
+  margin-bottom: 50px;
+  .text-normal();
+  overflow: hidden;
+
+  
+
+  @media (min-width: @width-tablet) {
+    // height: 155px;
+  }
+
+  @media (min-width: @width-desktop) {
+    // height: 95px;
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__author-text a {
+  .text-bold();
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.review__author-name {
+  .text-bold();
+  line-height: 24px;
+}
+
+.review__email {
+  font-size: 17px;
+  line-height: 30px;
+  color: @color-dark;
+}
+
+.write {
+  width: 260px;
+  margin-top: 38px;
+  box-sizing: border-box;
+
+  @media (min-width: @width-tablet) {
+    position: absolute;
+    top: 80px;
+    right: 50px; 
+    width: 175px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @width-desktop) {
+    right: 100px; 
+  }
+}
+
+.buttons-block {
+  margin: 36px 0 0 0;
+}
+

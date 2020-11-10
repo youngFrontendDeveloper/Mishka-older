@@ -1,0 +1,65 @@
+.knitting__title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 177px;
+  background-color: #f1f1f1;
+
+  @media(min-width: @width-tablet) {
+    height: 170px;
+  }
+
+  @media(min-width: @width-desktop) {
+    height: 200px;
+  }
+
+  &::after {  
+    @media(min-width: @width-tablet) {
+      content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 23px;
+    width: 100%;
+    background-image: url(../img/tracery-tablet.svg);
+    }
+    
+    @media(min-width: @width-desktop) {
+      background-image: url(../img/tracery-desktop.svg);
+    }
+    
+  }
+}
+
+.knitting__text {
+  margin: 0;
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media(min-width: @width-tablet) {
+    margin-top:74px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media(min-width: @width-desktop) {
+    margin-top: 124px;
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+}
+
+.knitting__form {
+  width: 100%;
+  // margin-top: 32px;
+
+  // @media(min-width: @width-tablet) {
+  //   margin-top: 60px;
+  // }
+}

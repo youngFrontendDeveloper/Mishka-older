@@ -1,0 +1,17 @@
+.page {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .text-normal();  
+
+  @media (min-width: @width-tablet) {
+    width: @width-tablet;   
+  }
+
+  @media (min-width: @width-desktop) {
+    width: @width-desktop;
+    
+  }
+}
+

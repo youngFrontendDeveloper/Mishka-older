@@ -1,0 +1,38 @@
+.logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+  
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @width-tablet) {
+    .logo {
+      width: 112px;
+      height: 46px;
+    }
+  }
+  
+  @media (min-width: @width-desktop) {
+    .logo {
+      width: 149px;
+      height: 72px;
+    }
+  }
+}
+
+.logo--current {
+  &:hover {
+    cursor: default;
+    opacity: 1;
+  }
+}
+
+
+
