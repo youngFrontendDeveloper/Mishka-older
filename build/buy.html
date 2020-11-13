@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Сайт вязаных вещей "Мишка"</title>
+</head>
+<body class="page">
+  <!-- +++++++++++ HEADER ++++++++++++++++ -->
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html" class="logo ">
+        <picture>
+          <source media="(min-width: @width-desktop)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: @width-tablet)" srcset="img/logo-tablet.svg"> 
+          <img src="img/logo-mobile.svg" alt="Логотип компании Мишка " width="86" height="35">
+        </picture>     
+      </a>  
+    </div>  
+    <div class="mobile-menu header__mobile-menu">
+      <button class="mobile-menu__button">Открыть меню</button>         
+    </div>   <!--end mobile-menu-->          
+    <nav class="nav header__nav">        
+      <div class="top-menu nav__top-menu">
+        <ul class="top-menu__lists">
+          <li class="top-menu__list"><a href="catalog.html" class="link top-menu__link">Каталог товаров</a></li>
+          <li class="top-menu__list"><a href="form.html" class="link top-menu__link">Вязание на заказ</a></li>
+        </ul>
+      </div>  <!--end top-menu-->        
+      <div class="user-block nav__user-block">
+        <div class="user-block__item">
+          <a class="link search user-block__search">
+            <svg class="search__icon user-block__search-icon" width="18" height="18">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+            Поиск по сайту
+          </a>              
+        </div>
+        <div class="user-block__item">
+          <a href="#" class="link cart user-block__cart">
+            <svg class="cart__icon user-block__cart-icon" width="20" height="19">
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+            Корзина:&nbsp;<span>пока пуста</span> 
+            
+          </a> 
+        </div>
+      </div>  <!--end user-block-->             
+    </nav>    
+  
+    <div class="bottom-menu header__bottom-menu">
+      <a href="#" class="bottom-menu__new-receipts">Новые поступления</a>
+      <a href="#" class="bottom-menu__sale">Распродажа</a>
+      <p class="bottom-menu__delivery">Бесплатная доставка по России</p>
+    </div>  <!--end bottom-menu-->
+    
+    <h1 class="visualy-hidden">Интернет-магазин вязаных вещей "Мишка"</h1>
+  </header>
+  <!-- +++++++++++MAIN+++++++++++++ -->
+  <main class="main">
+    <section class="buy-container">
+     <form class="buy wrapper">
+      <h2 class="buy__title title">Добавить в корзину</h2>
+      <p class="buy__text">Выберите размер:</p>
+      <div class="button-container">
+        <input type="button" name="small" value="S" class="size small">
+        <input type="button" name="middle" value="M" class="size middle">
+        <input type="button" name="large" value="L" class="size large">
+      </div>
+      <button class="add">Добавить</button>
+     </form>
+
+    </section>
+  </main>
+
+  <!-- ++++++++++++++FOOTER+++++++++++++++ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <a href="index.html" class="logo ">          
+          <img src="img/logo-mobile.svg" alt="Логотип компании Мишка " width="86" height="35">
+        </a>  
+      </div>
+      <ul class="footer__social">
+        <li class="social__item instagramm"><a href="#">Инстаграмм</a></li>
+        <li class="social__item facebook"><a href="#">Фейсбук</a></li>
+        <li class="social__item twitter"><a href="#">Твиттер</a></li>
+      </ul>
+      <div class="copyright">
+        <b>Разработано:</b>
+        <a href="https://htmlacademy." class="copyright__logo">HTMLAcademy</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
