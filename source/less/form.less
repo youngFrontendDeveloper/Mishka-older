@@ -250,13 +250,16 @@
   width: 260px;
   padding-top: 20px;
   padding-bottom: 18px;
+  .text-bold();
   color:@color-dark;
+  font-size: inherit;
   border: 0;
   border-bottom: 2px solid @color-black;
   outline:solid 1px transparent; 
 
   @media(min-width: @width-tablet) {
-    padding-top: 3px;
+    padding-top: 0px;
+    padding-bottom: 17px;
     padding-left: 20px;
     flex-grow: 1;
     flex-basis: 375px;
@@ -289,8 +292,9 @@
 .form__input-tel {  
   width: 260px;
   padding-top: 25px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   color:@color-dark;
+  font-size: inherit;
   border: 0;
   border-bottom: 2px solid @color-black;
   outline:solid 1px transparent;   
@@ -301,13 +305,13 @@
 
   @media(min-width: @width-tablet) {
     width: 500px;
-    padding-top: 20px;
+    padding-top: 17px;
     background-color: #f1f1f1;
   }
 
   @media(min-width: @width-desktop) {
     width: 700px;
-    padding-top: 18px;    
+    
   }
 
 }
@@ -353,9 +357,10 @@
 
 .form__input-email {  
   width: 260px;
-  padding-top: 4px;
+  padding-top: 1px;
   padding-bottom: 18px;
   color:@color-dark;
+  font-size: inherit;
   border: 0;
   border-bottom: 2px solid @color-black;
   outline:solid 1px transparent;   
@@ -424,7 +429,7 @@
       // ++++++++++++ placeholder +++++++++++
 
 ::-webkit-input-placeholder {
-  color:@color-dark;
+  .text-normal(); 
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
@@ -433,8 +438,8 @@
     font-size: 19px;
   }
  }
- ::-moz-placeholder {
-  color:@color-dark;
+::-moz-placeholder {
+  .text-normal(); 
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
@@ -443,8 +448,8 @@
     font-size: 19px;
   }
  }
- :-ms-input-placeholder {
-  color: @color-dark;
+:-ms-input-placeholder {
+  .text-normal(); 
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
@@ -453,8 +458,8 @@
     font-size: 19px;
   }
  }
- :-moz-placeholder {
-  color: @color-dark;
+:-moz-placeholder {
+  .text-normal(); 
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
@@ -464,10 +469,10 @@
   }
  }
 
- :focus::-webkit-input-placeholder {
+:focus::-webkit-input-placeholder {
    opacity: 1;
  }
- :focus::-moz-placeholder          {
+:focus::-moz-placeholder          {
   opacity: 1;
 }
 :focus:-moz-placeholder           {

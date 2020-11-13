@@ -11,6 +11,43 @@
   }
 }
 
+.header--inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 177px;
+  width: 100%;
+  background-color: #f1f1f1;
+
+  @media(min-width: @width-tablet) {
+    height: 170px;
+    
+  }
+
+  @media(min-width: @width-desktop) {
+    height: 200px;
+  }
+
+  &::after {  
+    @media(min-width: @width-tablet) {
+      content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 23px;
+    width: 100%;
+    background-image: url(../img/tracery-tablet.svg);
+    }
+    
+    @media(min-width: @width-desktop) {
+      background-image: url(../img/tracery-desktop.svg);
+    }
+    
+  }
+}
+
+
 .header__logo {
   display: flex;
   justify-content: center;

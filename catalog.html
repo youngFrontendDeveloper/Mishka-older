@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Сайт вязаных вещей "Мишка"</title>
+</head>
+<body class="page">
+  <!-- +++++++++++ HEADER ++++++++++++++++ -->
+  <header class="header">
+      <div class="header__logo">
+        <a href="index.html" class="logo">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"> 
+            <img src="img/logo-mobile.svg" alt="Логотип компании Мишка " width="86" height="35">
+          </picture>     
+        </a>  
+      </div>  
+      <div class="mobile-menu header__mobile-menu">
+        <button class="mobile-menu__button">Открыть меню</button>         
+      </div>   <!--end mobile-menu-->          
+      <nav class="nav header__nav">        
+        <div class="top-menu nav__top-menu">
+          <ul class="top-menu__lists">
+            <li class="top-menu__list"><a class="link top-menu__link">Каталог товаров</a></li>
+            <li class="top-menu__list"><a href="form.html" class="link top-menu__link">Вязание на заказ</a></li>
+          </ul>
+        </div>  <!--end top-menu-->        
+        <div class="user-block nav__user-block">
+          <div class="user-block__item">
+            <a class="link search user-block__search">
+              <svg class="search__icon user-block__search-icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+              Поиск по сайту
+            </a>              
+          </div>
+          <div class="user-block__item">
+            <a href="#" class="link cart user-block__cart">
+              <svg class="cart__icon user-block__cart-icon" width="20" height="19">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+              Корзина:&nbsp;<span>пока пуста</span> 
+              
+            </a> 
+          </div>
+        </div>  <!--end user-block-->        
+      </nav>    
+    
+      <div class="bottom-menu header__bottom-menu header__bottom-menu--background--dark">
+        <a href="#" class="bottom-menu__new-receipts">Новые поступления</a>
+        <a href="#" class="bottom-menu__sale">Распродажа</a>
+        <p class="bottom-menu__delivery">Бесплатная доставка по России</p>
+      </div>  <!--end bottom-menu-->
+      
+    <h1 class="visualy-hidden">Интернет-магазин вязаных вещей "Мишка"</h1>
+    <div class="header--inner">
+      <h2 class="title">Каталог товаров</h2>
+    </div>
+  </header>
+
+  <!-- +++++++++++ MAIN +++++++++++++ -->
+  <main class="main">
+    <section class="catalog">      
+      <div class="product-card">
+        <a href="#" class="product-card__img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/bunny-desktop.webp, img/bunny-desktop@2x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bunny-tablet.webp, img/bunny-tablet@2x.webp"> 
+            <!-- <source media="(min-width: 1150px)" srcset="img/bunny-desktop.jpg, img/bunny-desktop@2x.jpg"> -->
+            <!-- <source media="(min-width: 768px)" srcset="img/bunny-tablet.jpg, img/bunny-tablet@2x.jpg">  -->
+            <img src="img/bunny-mobile.webp" alt="Изображение вязаного зайчика" width="260" height="195">
+          </picture>
+        </a>
+        <div class="product-card__descript-wrap">
+          <div class="product-card__descript">
+            <h3 class="title title--size--s">
+              <a href="#" class="link">Зайчик-попрыгайчик</a>
+            </h3>
+            <p class="product-card__descript-text">Рост 30 см, вес 200 г</p>
+          </div>
+          <div class="product-card__price">
+            <p class="product-card__price-text">1 200 руб.</p>
+            <a href="#" class="product-card__price-link">Положить в корзинку
+              <svg class="cart__icon product-card__price-img" width="20" height="19">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="#" class="product-card__img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/Laundry-basket-desktop.webp, img/Laundry-basket-desktop@2x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/Laundry-basket-tablet.webp, img/Laundry-basket-tablet@2x.webp"> 
+            <img src="img/Laundry-basket-mobile.webp" alt="Изображение корзинки для белья" width="260" height="195">
+          </picture>
+        </a>
+        <div class="product-card__descript-wrap">
+          <div class="product-card__descript">
+            <h3 class="title title--size--s">
+              <a href="#" class="link">Корзинка для белья</a>
+            </h3>
+            <p class="product-card__descript-text">Диаметр 15 см, высота 10 см</p>
+          </div>
+          <div class="product-card__price">
+            <p class="product-card__price-text">690 руб.</p>
+            <a href="#" class="product-card__price-link">Положить в корзинку
+              <svg class="cart__icon product-card__price-img" width="20" height="19">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>        
+      </div>      
+      <div class="product-card">
+        <a href="#" class="product-card__img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/toys-basket-desktop.webp, img/toys-basket-desktop@2x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/toys-basket-tablet.webp, img/toys-basket-tablet@2x.webp"> 
+            <img src="img/toys-basket-mobile.webp" srcset="img/toys-basket-mobile@2x.webp" alt="Изображение корзинки для игрушек" width="260" height="195">
+          </picture>
+        </a>
+        <div class="product-card__descript-wrap">
+          <div class="product-card__descript">
+            <h3 class="title title--size--s">
+              <a href="#" class="link">Большая корзинка для игрушек</a>
+            </h3>
+            <p class="product-card__descript-text">Диаметр 30 см, высота 30 см</p>
+          </div>
+          <div class="product-card__price">
+            <p class="product-card__price-text">1 500 руб.</p>
+            <a href="#" class="product-card__price-link">Положить в карзинку
+              <svg class="cart__icon product-card__price-img" width="20" height="19">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>        
+      </div>            
+    </section>
+    <section class="video-block">
+      <!-- <div class="video-text"> -->
+        <h3 class="title title--size--s video-block__title">Процесс производства</h3>
+        <div class="video-wrap">
+          <video controls="controls" class="video">
+            <source src="video/groom.mp4" type='video/mp4'>
+              Тег video не поддерживается вашим браузером.
+           <a href="video/groom.mp4">Скачайте видео</a>
+          </video>
+          <a href="#" class="video__link">
+            <!-- <svg class="video__img" width="101" height="77">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg> -->
+          </a>
+        </div>
+        <p class="video-block__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.          
+        </p>
+        <a href="#" class="btn video-block__btn">Сделать заказ</a>
+
+      <!-- </div> -->
+    </section>
+  </main>
+
+  <!-- ++++++++++++++  FOOTER  +++++++++++++++ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <a href="index.html" class="logo">          
+          <img src="img/logo-mobile.svg" alt="Логотип компании Мишка " width="86" height="35">
+        </a>  
+      </div>
+      <ul class="footer__social">
+        <li class="social__item instagramm"><a href="#">Инстаграмм</a></li>
+        <li class="social__item facebook"><a href="#">Фейсбук</a></li>
+        <li class="social__item twitter"><a href="#">Твиттер</a></li>
+      </ul>
+      <div class="copyright">
+        <b>Разработано:</b>
+        <a href="https://htmlacademy." class="copyright__logo">HTMLAcademy</a>
+      </div>
+    </div>
+  </footer>
+  <script src="source/js/swiper.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
