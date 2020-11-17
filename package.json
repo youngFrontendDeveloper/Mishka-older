@@ -46,7 +46,9 @@
     "node": "^8.16"
   },
   "dependencies": {
-    "del": "^5.1.0"
+    "del": "^5.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
   },
   "main": "gulpfile.js",
   "author": "",

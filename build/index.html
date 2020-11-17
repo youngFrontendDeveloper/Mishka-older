@@ -20,7 +20,7 @@
         </a>  
       </div>  
       <div class="mobile-menu header__mobile-menu">
-        <button class="mobile-menu__button">Открыть меню</button>         
+        <button class="mobile-menu__button btn-close">Открыть меню</button>         
       </div>   <!--end mobile-menu-->          
       <nav class="nav header__nav">        
         <div class="top-menu nav__top-menu">
@@ -101,7 +101,7 @@
             <p class="week-product__price">Цена: 990 руб.</p>          
           </div>
           <div class="week-product__order">
-            <a href="buy.html" class="btn">Заказать</a>
+            <a href="modal.html" class="btn">Заказать</a>
           </div>
         </div>  <!--end week-product__content-->       
       </div>   <!--end week-product-->   
@@ -224,10 +224,24 @@
     </div>
   </footer>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="source/js/jquery.elimore.min.js"></script> -->
-  <!-- <script src="node_modules/readmore-js/readmore.min.js"></script> -->
-  <script src="js/swiper.min.js"></script>
+  <section class="modal-container modal-container--inner">
+    <form class="modal modal--inner">
+      <h2 class="modal__title title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <div class="button-container">
+        <input type="button" name="small" value="S" class="modal-btn small">
+        <input type="button" name="middle" value="M" class="modal-btn middle">
+        <input type="button" name="large" value="L" class="modal-btn large">
+      </div>
+      <button class="btn-add">Добавить</button>
+      <button class="btn-close modal-btn-close">Закрыть</button>
+     </form>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="source/js/jquery.elimore.min.js"></script> --> -->
+  <!-- <script src="node_modules/readmore-js/readmore.min.js"></script>
+  <script src="js/libs/swiper.min.js"></script>
   <script src="js/script.js"></script>
 </body>
-</html>
+</html>--></body></html>

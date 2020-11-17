@@ -4,6 +4,8 @@ var gulp = require("gulp");
 var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
@@ -24,7 +26,7 @@ gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
       "source/img/**",
-      "source/js/**",
+      "source/js/libs/*.js",
       "source/*.ico",
       "source/video/*.*"
     ], {
@@ -86,6 +88,27 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("source/img"));
 });
 
+// Файлы для подключения в строгом порядке:
+
+let jsFiles = [  
+  "./source/js/main.js"   
+];
+
+// Task на скрипты JS 
+gulp.task("script", function () {
+  return gulp.src(jsFiles)
+  .pipe(sourcemap.init()) // инициализируем создание Source Maps
+  .pipe(concat("script.js"))  // Объединение файлов в один
+  .pipe(gulp.dest("./source/js")) 
+  .pipe(uglify({
+    toplevel: true
+  }))
+  .pipe(sourcemap.write(".")) // пути для записи SourceMaps - в данном случае карта SourceMaps будет добавлена прям в данный файл scripts.min.js в самом конце в формате комментария
+  .pipe(gulp.dest("./build/js"))
+  .pipe(server.stream());
+});
+
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -97,6 +120,7 @@ gulp.task("server", function () {
 
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/js/**/*.js", gulp.series("script"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("./*.html", gulp.series("html", "refresh"));
 });
@@ -106,5 +130,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "script", "images", "webp", "sprite", "html"));
 gulp.task("default", gulp.series("build", "server"));
