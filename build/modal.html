@@ -12,8 +12,8 @@
     <div class="header__logo">
       <a href="index.html" class="logo ">
         <picture>
-          <source media="(min-width: @width-desktop)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: @width-tablet)" srcset="img/logo-tablet.svg"> 
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"> 
           <img src="img/logo-mobile.svg" alt="Логотип компании Мишка " width="86" height="35">
         </picture>     
       </a>  
@@ -64,11 +64,11 @@
       <h2 class="modal__title title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <div class="button-container">
-        <input type="radio" name="modal-btn" id="small" class="visualy-hidden">
+        <input type="radio" name="size" id="small" class="visualy-hidden" value="small" checked="">
         <label for="small" class="modal-btn small">S</label>
-        <input type="radio" name="modal-btn" id="middle" class="visualy-hidden">
+        <input type="radio" name="size" id="middle" class="visualy-hidden" value="middle">
         <label for="middle" class="modal-btn middle">M</label>
-        <input type="radio" name="modal-btn" id="large" class="visualy-hidden">
+        <input type="radio" name="size" id="large" class="visualy-hidden" value="large">
         <label for="large" class="modal-btn large">L</label>        
       </div>
       <button class="btn-add">Добавить</button>
