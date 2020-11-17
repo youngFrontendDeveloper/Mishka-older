@@ -19,7 +19,7 @@
       </a>  
     </div>  
     <div class="mobile-menu header__mobile-menu">
-      <button class="mobile-menu__button">Открыть меню</button>         
+      <button class="mobile-menu__button  btn-close">Открыть меню</button>         
     </div>   <!--end mobile-menu-->          
     <nav class="nav header__nav">        
       <div class="top-menu nav__top-menu">
@@ -64,9 +64,12 @@
       <h2 class="modal__title title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <div class="button-container">
-        <input type="button" name="small" value="S" class="modal-btn small" >
-        <input type="button" name="middle" value="M" class="modal-btn middle">
-        <input type="button" name="large" value="L" class="modal-btn large">
+        <input type="radio" name="modal-btn" id="small" class="visualy-hidden" >
+        <label for="small" class="modal-btn small">S</label>
+        <input type="radio" name="modal-btn" id="middle" class="visualy-hidden">
+        <label for="middle" class="modal-btn middle">M</label>
+        <input type="radio" name="modal-btn" id="large" class="visualy-hidden">
+        <label for="large" class="modal-btn large">L</label>        
       </div>
       <button class="btn-add">Добавить</button>
      </form>

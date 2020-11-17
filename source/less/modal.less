@@ -73,37 +73,34 @@
 .modal-btn {
   width: 82px;
   height: 52px;
+  line-height: 52px;
   background-color: transparent;
   border: 2px solid #ececec;
   box-sizing: border-box;
   cursor: pointer;
-  outline-color: transparent;
- 
+  outline-color: transparent; 
 
   &:hover {
     border-color: #c7c7c7;
   }
 
   &:active {
-    border:2px solid #62d1ba;
-    // border-color: #62d1ba;
+    // border:2px solid #62d1ba;
+    border-color: #62d1ba;
   }
 
     @media (min-width: @width-tablet) {
     width: 112px;
-  } 
-  
+  }   
 }
 
-.modal-btn--pressed {
-  border:2px solid #62d1ba;
-  // border-color: #62d1ba;
+input[type="radio"]:checked + .modal-btn {
+  border-color: #62d1ba;
 }
 
 .btn-add {
   width: 100%;
-  padding: 20px;
-  // .text-bold();
+  padding: 20px;  
   color: @color-white;
   line-height: 17px;
   text-transform: uppercase;

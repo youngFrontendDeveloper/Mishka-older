@@ -86,20 +86,6 @@ svg {
 .none {
   display: none;
 }
-.wrapper {
-  margin: 0 auto;
-  padding: 0 30px;
-}
-@media (min-width: 768px) {
-  .wrapper {
-    padding: 0 50px;
-  }
-}
-@media (min-width: 1150px) {
-  .wrapper {
-    padding: 0 100px;
-  }
-}
 .visualy-hidden {
   position: absolute;
   width: 1px;
@@ -116,14 +102,6 @@ svg {
   white-space: nowrap;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.br {
-  display: block;
-}
-@media (min-width: 768px) {
-  .br {
-    display: none;
-  }
 }
 .page {
   width: 320px;
@@ -364,6 +342,7 @@ svg {
 .btn {
   display: block;
   padding: 17px 0;
+  color: #444444;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -380,9 +359,6 @@ svg {
 }
 .btn:active {
   color: #8d8d8d;
-}
-a.btn {
-  color: #444444;
 }
 .nav {
   -webkit-box-sizing: border-box;
@@ -1369,36 +1345,11 @@ a.btn {
 .reviews__author-text {
   position: relative;
   margin-bottom: 50px;
-  font-family: "OpenSans", "Arial Narrow", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: normal;
-  color: #444444;
   overflow: hidden;
-}
-@media (min-width: 768px) {
 }
 @media (min-width: 1150px) {
   .reviews__author-text {
     margin-bottom: 30px;
-  }
-}
-.reviews__author-text a {
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
-  color: #000000;
-  margin-left: 20px;
-  text-decoration: none;
-}
-.reviews__author-text a--green {
-  color: #63d1bb;
-  text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  .reviews__author-text a--green {
-    line-height: 17px;
   }
 }
 .review__author-name {
@@ -1628,10 +1579,10 @@ a.btn {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.contacts__adress p {
+.contacts__adress-text {
   margin: 0;
 }
-.contacts__text span {
+.contacts__separate-text {
   margin-right: 30px;
 }
 .contacts__link {
@@ -1752,6 +1703,7 @@ a.btn {
 .modal-btn {
   width: 82px;
   height: 52px;
+  line-height: 52px;
   background-color: transparent;
   border: 2px solid #ececec;
   -webkit-box-sizing: border-box;
@@ -1763,15 +1715,15 @@ a.btn {
   border-color: #c7c7c7;
 }
 .modal-btn:active {
-  border: 2px solid #62d1ba;
+  border-color: #62d1ba;
 }
 @media (min-width: 768px) {
   .modal-btn {
     width: 112px;
   }
 }
-.modal-btn--pressed {
-  border: 2px solid #62d1ba;
+input[type="radio"]:checked + .modal-btn {
+  border-color: #62d1ba;
 }
 .btn-add {
   width: 100%;
