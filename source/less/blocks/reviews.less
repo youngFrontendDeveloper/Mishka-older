@@ -51,6 +51,20 @@
   }
 }
 
+@media (min-resolution: 1.5dppx) {
+  .reviews {
+    @media (min-width: @width-tablet) {
+      background: url(../img/review@2x.jpg) top left no-repeat;
+      background-size: 350px;
+    }
+
+    @media (min-width: @width-desktop) {
+      background: url(../img/review@2x.jpg) top left 100px no-repeat;
+      background-size: 350px;
+    }
+  }
+}
+
 .reviews__author-text {
   position: relative;  
   margin-bottom: 50px;

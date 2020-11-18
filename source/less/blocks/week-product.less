@@ -53,6 +53,25 @@
   }
 }
 
+@media (min-resolution: 144dpi), 
+       (min-resolution: 1.5dppx){
+  .week-product {
+    background-image: url(../img/triple-set@2x.jpg);
+    background-size: 260px;
+    background-repeat: no-repeat;
+
+  @media (min-width: @width-tablet) {
+    background: url(../img/triple-set-tablet@2x.jpg) right 50px bottom 53px no-repeat;
+    background-size: 334px;
+  }
+
+  @media (min-width: @width-desktop) {
+    background: url(../img/triple-set-desktop.jpg) right bottom 73px no-repeat;
+    background-size: 525px;
+    }
+  }  
+}
+
 .week-product__headline {
   padding: 30px 0 30px;
   

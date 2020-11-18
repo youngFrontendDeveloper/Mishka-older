@@ -70,9 +70,8 @@
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/bunny-desktop.webp 1x, img/bunny-desktop@2x.webp  2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/bunny-tablet.webp 1x, img/bunny-tablet@2x.webp 2x"> 
-            <!-- <source media="(min-width: 1150px)" srcset="img/bunny-desktop.jpg, img/bunny-desktop@2x.jpg"> -->
-            <!-- <source media="(min-width: 768px)" srcset="img/bunny-tablet.jpg, img/bunny-tablet@2x.jpg">  -->
-            <img src="img/bunny-mobile.webp" alt="Изображение вязаного зайчика" width="260" height="195">
+            <img src="img/bunny-mobile.webp"
+            srcset="img/bunny-mobile.webp 1x img/bunny-mobile@2x.webp 2x"  alt="Изображение вязаного зайчика" width="260" height="195">
           </picture>
         </a>
         <div class="product-card__descript-wrap">
@@ -152,7 +151,7 @@
               Тег video не поддерживается вашим браузером.
            <a href="video/video.mp4">Скачайте видео</a>
           </video>
-          <div id="controls" class="visualy-hidden">
+          <div id="controls">
             <a class="video__link">Play</a>
           </div>
           
