@@ -46,14 +46,14 @@
   font-family: "OpenSans";
   font-style: normal;
   font-display: swap;
-  src: url("fonts/OpenSans-Regular.woff2") format("woff2"), url("fonts/OpenSans-Regular.woff") format("woff");
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
 }
 @font-face {
   font-weight: bold;
   font-family: "OpenSans";
   font-style: normal;
   font-display: swap;
-  src: url("fonts/OpenSans-Bold.woff2") format("woff2"), url("fonts/OpenSans-Bold.woff") format("woff");
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
 }
 html,
 body {
@@ -521,6 +521,14 @@ svg {
     height: 88px;
     width: 175px;
   }
+}
+.top-menu__list--active:hover {
+  cursor: default;
+  opacity: 1;
+}
+.top-menu__list--active:hover .top-menu__link {
+  cursor: default;
+  opacity: 1;
 }
 @media (min-width: 1150px) {
   .top-menu__list + .top-menu__list {
@@ -2207,9 +2215,7 @@ input[type="radio"]:checked + .modal-btn {
 }
 @media (min-width: 768px) {
   .form__label-fio {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: auto;
     margin-right: 25px;
     padding-top: 1px;
     -webkit-box-flex: 0;
@@ -2250,14 +2256,14 @@ input[type="radio"]:checked + .modal-btn {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    -ms-flex-preferred-size: 375px;
-        flex-basis: 375px;
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
   }
 }
 @media (min-width: 1150px) {
   .form__input-fio {
-    -ms-flex-preferred-size: 573px;
-        flex-basis: 573px;
+    -ms-flex-preferred-size: 550px;
+        flex-basis: 550px;
   }
 }
 .form__input-fio:hover {
@@ -2527,6 +2533,8 @@ input[type="radio"]:checked + .modal-btn {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 .product-card {

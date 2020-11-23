@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Сайт вязаных вещей "Мишка"</title>
+  <title>Сайт вязаных вещей "Мишка" - каталог товаров</title>
 </head>
 <body class="page">
   <!-- +++++++++++ HEADER ++++++++++++++++ -->
@@ -25,7 +25,7 @@
       <nav class="nav header__nav">        
         <div class="top-menu nav__top-menu">
           <ul class="top-menu__lists">
-            <li class="top-menu__list"><a class="link top-menu__link">Каталог товаров</a></li>
+            <li class="top-menu__list top-menu__list--active"><a class="link top-menu__link">Каталог товаров</a></li>
             <li class="top-menu__list"><a href="form.html" class="link top-menu__link">Вязание на заказ</a></li>
           </ul>
         </div>  <!--end top-menu-->        
@@ -121,6 +121,9 @@
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/toys-basket-desktop.webp 1x, img/toys-basket-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/toys-basket-tablet.webp 1x, img/toys-basket-tablet@2x.webp 2x"> 
             <img src="img/toys-basket-mobile.webp" srcset="img/toys-basket-mobile@2x.webp" alt="Изображение корзинки для игрушек" width="260" height="195">
+            <source media="(min-width: 1150px)" srcset="img/toys-basket-desktop.jpg 1x, img/toys-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/toys-basket-tablet.jpg 1x, img/toys-basket-tablet@2x.jpg 2x"> 
+              <img src="img/toys-basket-mobile.jpg" srcset="img/toys-basket-mobile@2x.jpg" alt="Изображение корзинки для игрушек" width="260" height="195">
           </picture>
         </a>
         <div class="product-card__descript-wrap">
@@ -139,7 +142,58 @@
             </a>
           </div>
         </div>        
-      </div>            
+      </div> 
+      
+      <div class="product-card">
+        <a href="#" class="product-card__img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/bunny-desktop.webp 1x, img/bunny-desktop@2x.webp  2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bunny-tablet.webp 1x, img/bunny-tablet@2x.webp 2x"> 
+            <img src="img/bunny-mobile.webp" srcset="img/bunny-mobile.webp 1x img/bunny-mobile@2x.webp 2x" alt="Изображение вязаного зайчика" width="260" height="195">
+          </picture>
+        </a>
+        <div class="product-card__descript-wrap">
+          <div class="product-card__descript">
+            <h3 class="title title--size--s">
+              <a href="#" class="link">Зайчик-попрыгайчик</a>
+            </h3>
+            <p class="product-card__descript-text">Рост 30 см, вес 200 г</p>
+          </div>
+          <div class="product-card__price">
+            <p class="product-card__price-text">1 200 руб.</p>
+            <a href="#" class="product-card__price-link">Положить в корзинку
+              <svg class="cart__icon product-card__price-img" width="20" height="19">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="#" class="product-card__img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/bunny-desktop.webp 1x, img/bunny-desktop@2x.webp  2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bunny-tablet.webp 1x, img/bunny-tablet@2x.webp 2x"> 
+            <img src="img/bunny-mobile.webp" srcset="img/bunny-mobile.webp 1x img/bunny-mobile@2x.webp 2x" alt="Изображение вязаного зайчика" width="260" height="195">
+          </picture>
+        </a>
+        <div class="product-card__descript-wrap">
+          <div class="product-card__descript">
+            <h3 class="title title--size--s">
+              <a href="#" class="link">Зайчик-попрыгайчик</a>
+            </h3>
+            <p class="product-card__descript-text">Рост 30 см, вес 200 г</p>
+          </div>
+          <div class="product-card__price">
+            <p class="product-card__price-text">1 200 руб.</p>
+            <a href="#" class="product-card__price-link">Положить в корзинку
+              <svg class="cart__icon product-card__price-img" width="20" height="19">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="video-block">
       <!-- <div class="video-text"> -->

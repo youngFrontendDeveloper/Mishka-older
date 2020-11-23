@@ -1,6 +1,6 @@
-// var nav = document.querySelector('.nav');
+var nav = document.querySelector('.nav');
 // var mobileMenu = document.querySelector('.mobile-menu');
-// var mobileMenuButton = document.querySelector('.mobile-menu__button');
+var mobileMenuButton = document.querySelector('.mobile-menu__button');
 
 // var logoContainer = document.querySelector('.nav__logo');
 // var topMenu = document.querySelector('.top-menu');
@@ -11,35 +11,35 @@
 
 // Закрытие и открытин мобильного меню
 
-// function openMobileMenu() {
-//   if(document.documentElement.clientWidth < 768) {
-//    nav.classList.add('nav--hidden');
-//   }
-//   mobileMenuButton.addEventListener('click', function() {
-//     mobileMenuButton.classList.toggle('btn-close');
-//     nav.classList.toggle('nav--hidden');
-//   });
-// }
+function openMobileMenu() {
+  if(document.documentElement.clientWidth < 768) {
+   nav.classList.add('nav--hidden');
+  }
+  mobileMenuButton.addEventListener('click', function() {
+    mobileMenuButton.classList.toggle('btn-close');
+    nav.classList.toggle('nav--hidden');
+  });
+}
 
-// openMobileMenu();
+openMobileMenu();
 
 
 // Открытие и закрытие модального окна
 
-// var order = document.querySelector('.week-product__order'); 
-// var modalContainer = document.querySelector('.modal-container--inner');
-// var btnAdd = document.querySelector('.btn-add');
-// var modal = document.querySelector('.modal-inner');
-// var close = document.querySelector('.btn-close');
-// var modalBtn = document.querySelector('.modal-btn');
+var order = document.querySelector('.week-product__order'); 
+var modalContainer = document.querySelector('.modal-container--inner');
+var btnAdd = document.querySelector('.btn-add');
+var modal = document.querySelector('.modal-inner');
+var close = document.querySelector('.btn-close');
+var modalBtn = document.querySelector('.modal-btn');
 
 // Открываем модальное окно
-// order.addEventListener('click', function(event) {
-//   event.preventDefault();  //Отменяем переход по ссылке, которое установлено по умолчанию
-//   // event [ɪˈvent]   событие
-//   modalContainer.style.display = 'block';
+order.addEventListener('click', function(event) {
+  event.preventDefault();  //Отменяем переход по ссылке, которое установлено по умолчанию
+  // event [ɪˈvent]   событие
+  modalContainer.style.display = 'block';
     
-// });
+});
 
 
 // Закрываем модальное окно
@@ -54,7 +54,7 @@
 
 // modalBtn.addEventListener('click', function() {
   
-//       this.toggleClass(".modal-btn--pressed");
+//   modalBtn.toggleClass(".modal-btn--pressed");
 //   });
 
 // $(function() {
@@ -81,34 +81,34 @@
 
 // Слайдер Swiper
 
-// var mySwiper = new Swiper('.swiper-container', {
-//   slidesPerView: 1,
-//   // spaceBetween: 60,
-//   loop: true,
-//   // autoplay: {
-//   //   delay:2000,  // Автоплей
-//   // },
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 1,
-//       // spaceBetween: 20,
-//     },
-//     1150: {
-//       slidesPerView: 1,
-//       // spaceBetween: 60,
-//     }
+var mySwiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  // spaceBetween: 60,
+  loop: true,
+  // autoplay: {
+  //   delay:2000,  // Автоплей
+  // },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      // spaceBetween: 20,
+    },
+    1150: {
+      slidesPerView: 1,
+      // spaceBetween: 60,
+    }
     
-//   },
+  },
 
 
-//   slideClass: 'swiper-slide', // Класс отдельного слайда
-//   wrapperClass: 'swiper-wrapper', // Обертка для слайдов
+  slideClass: 'swiper-slide', // Класс отдельного слайда
+  wrapperClass: 'swiper-wrapper', // Обертка для слайдов
  
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 
 // Проигрывание видео
