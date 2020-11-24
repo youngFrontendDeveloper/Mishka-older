@@ -2777,8 +2777,6 @@ input[type="radio"]:checked + .modal-btn {
   width: 260px;
   height: 150px;
   margin-top: 27px;
-  background-image: url(../img/poster-mobile.webp);
-  background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .video-wrap {
@@ -2788,31 +2786,11 @@ input[type="radio"]:checked + .modal-btn {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
-    background-image: url(../img/poster-tablet.webp);
   }
 }
 @media (min-width: 1150px) {
   .video-wrap {
     width: 682px;
-    background-image: url(../img/poster-desktop.webp);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .video-wrap {
-    background-image: url(../img/poster-mobile@2x.webp);
-    background-size: 260px;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
-  .video-wrap {
-    background-image: url(../img/poster-tablet@2x.webp);
-    background-size: 668px;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1150px), (min-resolution: 144dpi) and (min-width: 1150px), (min-resolution: 1.5dppx) and (min-width: 1150px) {
-  .video-wrap {
-    background-image: url(../img/poster-desktop@2x.webp);
-    background-size: 682px;
   }
 }
 .video__link {
