@@ -1840,15 +1840,16 @@ input[type="radio"]:checked + .modal-btn {
 @media (min-width: 768px) {
   .footer__logo {
     display: block;
+    width: 185px;
   }
 }
 .footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1859,11 +1860,12 @@ input[type="radio"]:checked + .modal-btn {
 }
 @media (min-width: 768px) {
   .footer__social {
+    width: 145px;
     padding: 55px 30px;
     border-bottom: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1150px) {
   .footer__social {
     padding: 64px 30px 57px;
   }
@@ -2530,12 +2532,18 @@ input[type="radio"]:checked + .modal-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+.catalog__product-card {
+  margin-right: 50px;
+}
+.catalog__product-card:nth-child(3n) {
+  margin-right: 0;
 }
 .product-card {
   width: 100%;
@@ -2551,7 +2559,10 @@ input[type="radio"]:checked + .modal-btn {
 }
 @media (min-width: 1150px) {
   .product-card {
-    display: inline-block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 316px;
     margin-top: 128px;
   }
@@ -2580,7 +2591,16 @@ input[type="radio"]:checked + .modal-btn {
 }
 @media (min-width: 768px) {
   .product-card__descript-wrap {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 334px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -2589,6 +2609,9 @@ input[type="radio"]:checked + .modal-btn {
 @media (min-width: 1150px) {
   .product-card__descript-wrap {
     width: 316px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 .product-card__descript-wrap:hover {
@@ -2602,19 +2625,26 @@ input[type="radio"]:checked + .modal-btn {
 .product-card__descript {
   width: 204px;
   margin-top: 31px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ececec;
+  min-height: 95px;
 }
 @media (min-width: 768px) {
   .product-card__descript {
     width: 268px;
     margin-top: 30px;
-    padding-bottom: 170px;
   }
 }
 @media (min-width: 1150px) {
   .product-card__descript {
-    padding-bottom: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 .product-card__descript-text {
@@ -2627,6 +2657,13 @@ input[type="radio"]:checked + .modal-btn {
     font-size: 15px;
   }
 }
+@media (min-width: 1150px) {
+  .product-card__descript-text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
 .product-card__price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2634,15 +2671,9 @@ input[type="radio"]:checked + .modal-btn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 72px;
-}
-@media (min-width: 768px) {
-  .product-card__price {
-    height: 70px;
-  }
+  padding-top: 23px;
+  padding-bottom: 27px;
+  border-top: 1px solid #ececec;
 }
 .product-card__price-text {
   margin: 0;
@@ -2842,7 +2873,7 @@ input[type="radio"]:checked + .modal-btn {
     max-width: 293px;
     margin-top: 40px;
     margin-right: 0px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     margin-left: 80px;
   }
 }

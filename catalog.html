@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/libs/picturefill.min.js"></script>
   <title>Сайт вязаных вещей "Мишка" - каталог товаров</title>
 </head>
 <body class="page">
@@ -65,13 +66,15 @@
   <!-- +++++++++++ MAIN +++++++++++++ -->
   <main class="main">
     <section class="catalog">      
-      <div class="product-card">
+      <div class="product-card catalog__product-card">
         <a href="#" class="product-card__img">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/bunny-desktop.webp 1x, img/bunny-desktop@2x.webp  2x">
+            <source media="(min-width: 1150px)" srcset="img/bunny-desktop.jpg, img/bunny-desktop@2x.jpg  2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/bunny-tablet.webp 1x, img/bunny-tablet@2x.webp 2x"> 
-            <img src="img/bunny-mobile.webp"
-            srcset="img/bunny-mobile.webp 1x img/bunny-mobile@2x.webp 2x"  alt="Изображение вязаного зайчика" width="260" height="195">
+            <source media="(min-width: 768px)" srcset="img/bunny-tablet.jpg 1x, img/bunny-tablet@2x.jpg 2x"> 
+            <img src="img/bunny-mobile.jpg"
+            srcset="img/bunny-mobile.jpg 1x, img/bunny-mobile@2x.jpg 2x"  alt="Изображение вязаного зайчика" width="260" height="195">
           </picture>
         </a>
         <div class="product-card__descript-wrap">
@@ -91,12 +94,14 @@
           </div>
         </div>
       </div>
-      <div class="product-card">
+      <div class="product-card catalog__product-card">
         <a href="#" class="product-card__img">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/Laundry-basket-desktop.webp 1x, img/Laundry-basket-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/Laundry-basket-tablet.webp 1x, img/Laundry-basket-tablet@2x.webp 2x"> 
-            <img src="img/Laundry-basket-mobile.webp" alt="Изображение корзинки для белья" width="260" height="195">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/Laundry-basket-tablet.webp 1x, img/Laundry-basket-tablet@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/Laundry-basket-desktop.jpg 1x, img/Laundry-basket-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/Laundry-basket-tablet.jpg 1x, img/Laundry-basket-tablet@2x.jpg 2x">  
+            <img src="img/Laundry-basket-mobile.jpg" alt="Изображение корзинки для белья" width="260" height="195" srcset="img/Laundry-basket-mobile@2x.jpg 2x">
           </picture>
         </a>
         <div class="product-card__descript-wrap">
@@ -116,15 +121,15 @@
           </div>
         </div>        
       </div>      
-      <div class="product-card">
+      <div class="product-card catalog__product-card">
         <a href="#" class="product-card__img">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/toys-basket-desktop.webp 1x, img/toys-basket-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/toys-basket-tablet.webp 1x, img/toys-basket-tablet@2x.webp 2x"> 
-            <img src="img/toys-basket-mobile.webp" srcset="img/toys-basket-mobile@2x.webp" alt="Изображение корзинки для игрушек" width="260" height="195">
+            <img src="img/toys-basket-mobile.jpg" srcset="img/toys-basket-mobile@2x.jpg" alt="Изображение корзинки для игрушек" width="260" height="195">
             <source media="(min-width: 1150px)" srcset="img/toys-basket-desktop.jpg 1x, img/toys-basket-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/toys-basket-tablet.jpg 1x, img/toys-basket-tablet@2x.jpg 2x"> 
-              <img src="img/toys-basket-mobile.jpg" srcset="img/toys-basket-mobile@2x.jpg" alt="Изображение корзинки для игрушек" width="260" height="195">
+            <source media="(min-width: 768px)" srcset="img/toys-basket-tablet.jpg 1x, img/toys-basket-tablet@2x.jpg 2x"> 
+              
           </picture>
         </a>
         <div class="product-card__descript-wrap">
@@ -145,7 +150,7 @@
         </div>        
       </div> 
       
-      <div class="product-card">
+      <!-- <div class="product-card catalog__product-card">
         <a href="#" class="product-card__img">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/bunny-desktop.webp 1x, img/bunny-desktop@2x.webp  2x">
@@ -171,7 +176,7 @@
           </div>
         </div>
       </div>
-      <div class="product-card">
+      <div class="product-card catalog__product-card">
         <a href="#" class="product-card__img">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/bunny-desktop.webp 1x, img/bunny-desktop@2x.webp  2x">
@@ -183,9 +188,9 @@
         <div class="product-card__descript-wrap">
           <div class="product-card__descript">
             <h3 class="title title--size--s">
-              <a href="#" class="link">Зайчик-попрыгайчик</a>
+              <a href="#" class="link">Зайчик-попрыгайчик. Очень даже побегайчик</a>
             </h3>
-            <p class="product-card__descript-text">Рост 30 см, вес 200 г</p>
+            <p class="product-card__descript-text">Рост 30 см, вес 200 г Ширина 10 см Высота 30 см Объем груди 30 см</p>
           </div>
           <div class="product-card__price">
             <p class="product-card__price-text">1 200 руб.</p>
@@ -196,16 +201,13 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <section class="video-block">
       <!-- <div class="video-text"> -->
         <h3 class="title title--size--s video-block__title">Процесс производства</h3>
         <div class="video-wrap">
-          <video controls="controls" class="video" width="260" height="150">
-            <source src="video/video.mp4" type='video/mp4'>
-              Тег video не поддерживается вашим браузером.
-           <a href="video/video.mp4">Скачайте видео</a>
+          <video controls="controls" class="video" width="260" height="150">            
           </video>
           <div id="controls">
             <a class="video__link">Play</a>
@@ -240,6 +242,7 @@
     </div>
   </footer>
   <script src="source/js/swiper.min.js"></script>
+  <script src="js/libs/picturefill.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
